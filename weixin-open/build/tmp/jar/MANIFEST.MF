@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Title: weixin-open
+Target-Compatibility: 1.8
+Implementation-Version: 1.0
+Built-By: jzb
+Source-Compatibility: 1.8
+Built-JDK: 1.8.0_131
+

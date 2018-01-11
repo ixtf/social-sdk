@@ -1,0 +1,8 @@
+rootProject.name = 'social-sdk'
+include 'weixin-mp'
+include 'weixin-pay'
+include 'weixin-qydev'
+include 'social-core'
+include 'weixin-pay-sl'
+include 'weixin-open'
+
