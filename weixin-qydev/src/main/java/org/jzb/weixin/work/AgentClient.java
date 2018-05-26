@@ -1,7 +1,12 @@
 package org.jzb.weixin.work;
 
 import org.jzb.social.core.AbstractExpireToken;
+import org.jzb.weixin.work.agent.AgentGetRequest;
+import org.jzb.weixin.work.contact.TagGetRequest;
+import org.jzb.weixin.work.contact.UserListRequest;
+import org.jzb.weixin.work.contact.UserSimpleListRequest;
 import org.jzb.weixin.work.msg.MsgSendRequest;
+import org.jzb.weixin.work.oa.GetCheckinDataRequest;
 import org.jzb.weixin.work.util.AesException;
 import org.jzb.weixin.work.util.WXBizMsgCrypt;
 
@@ -39,6 +44,26 @@ public class AgentClient {
 
     public MsgSendRequest.Builder msgSend() {
         return new MsgSendRequest.Builder(this);
+    }
+
+    public AgentGetRequest.Builder agentGet() {
+        return new AgentGetRequest.Builder(this, agentid);
+    }
+
+    public UserListRequest.Builder userList() {
+        return new UserListRequest.Builder(this);
+    }
+
+    public UserSimpleListRequest.Builder userSimpleList() {
+        return new UserSimpleListRequest.Builder(this);
+    }
+
+    public TagGetRequest.Builder tagGet() {
+        return new TagGetRequest.Builder(this);
+    }
+
+    public GetCheckinDataRequest.Builder getCheckinData() {
+        return new GetCheckinDataRequest.Builder(this);
     }
 
     public int getAgentid() {

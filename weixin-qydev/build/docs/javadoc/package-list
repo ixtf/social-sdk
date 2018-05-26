@@ -1,3 +1,6 @@
 org.jzb.weixin.work
+org.jzb.weixin.work.agent
+org.jzb.weixin.work.contact
 org.jzb.weixin.work.msg
+org.jzb.weixin.work.oa
 org.jzb.weixin.work.util
